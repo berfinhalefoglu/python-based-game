@@ -1,34 +1,3 @@
-Evet — bu projeyi Design Patterns dersi için çok güzel “pattern odaklı” anlatabilirsin. Elindeki dosyalar zaten bunu destekliyor:
-
-Singleton: GameManager oyun durumunu (score, paused) tek bir instance olarak yönetiyor. 
-
-game_manager
-
-Factory: EnemyFactory.create_enemy() düşman tipine göre doğru sınıfı üretip döndürüyor. 
-
-enemy_factory
-
-Builder: MazeBuilder / Level1Builder / Level2Builder labirent seviyelerini adım adım kuruyor. 
-
-maze_builder
-
-Decorator: SlipperyMazeDecorator ve SlowingMazeDecorator oyuncuya “zemin etkileri” ekliyor. 
-
-maze_block_decorator
-
-(MVC gibi ayrım):
-
-Model: oyun durumu (GameManager), maze verisi (builder ile üretilen grid)
-
-View: GameObject.draw() çizim sorumluluğu 
-
-game_manager
-
-Controller: düşman hareket/AI mantığı enemy_controller.py 
-
-enemy_controller
-
-Aşağıdaki README’yi direkt GitHub’a README.md olarak koyabilirsin (kopyala–yapıştır):
 
 # Python Maze Game (Design Patterns)
 
